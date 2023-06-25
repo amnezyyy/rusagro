@@ -1,0 +1,91 @@
+/*Контейнер*/
+
+body{
+    margin: 0;
+    background: url("../../img/bg/index.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
+.allfeed-pic {
+    justify-content: center;
+    height: auto;
+    width: auto;
+    display: flex;
+    padding: 150px 25px 25px 25px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.allfeed-main-text{
+    width: 1350px;
+    height: auto;
+    display: flex;
+}
+
+.allfeed-container{
+    justify-content: center;
+    height: auto;
+    width: auto;
+    display: flex;
+    padding: 50px 25px 50px 25px;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: white;
+}
+
+.allfeed-block-container{
+    width: 1350px;
+    height: auto;
+    display: flex;
+    animation: fade-in 1s;
+    transition: all .5s ease;
+}
+
+@keyframes fade-in {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.feed-container{
+    display: flex;
+    flex-flow: wrap;
+    column-gap: 25px;
+    row-gap: 25px;
+}
+
+/*СкроллБар*/
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f9f9fd;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.50);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd;
+}
+
+/*Мобильная версия*/
+
+@media (max-width: 1000px ) {
+
+    .allfeed-block-container{
+        width: 950px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .feed-container{
+        row-gap: 0;
+        background-color: red;
+
+    }
+}

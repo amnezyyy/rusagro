@@ -1,0 +1,165 @@
+/*Контейнер*/
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url("../../img/bg/index.jpg") no-repeat fixed;
+    background-size: cover;
+    transition: all .5s ease;
+}
+
+.product-place-container{
+    justify-content: center;
+    height: auto;
+    width: auto;
+    display: flex;
+    padding: 150px 25px 50px 25px;
+    flex-wrap: wrap;
+}
+
+.product-class-container{
+    width: 1350px;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: relative;
+    transition: all 0.5s ease;
+
+}
+
+.class-left {
+    display: flex;
+    width: 49%;
+    height: auto;
+    row-gap: 25px;
+    flex-flow: column;
+    animation-direction: normal;
+    animation: mymove 1s ;
+}
+
+.class-right {
+    display: flex;
+    width: 49%;
+    height: auto;
+    row-gap: 25px;
+    flex-flow: column;
+    animation-direction: reverse;
+    color: transparent;
+    animation: mymove 1s ;
+}
+
+.a-container{
+    width: 100%;
+    padding: 50px;
+    height: 550px;
+    border-radius: 50px;
+    display: flex;
+    flex-flow: column;
+    font-size: 35px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    transition: .5s ease-in-out;
+    animation: color 2s ;
+}
+
+.a-container:hover {
+    color: #4bb44d;
+    font-size: 40px;
+}
+
+@keyframes mymove {
+    from {width: 200px; opacity: 0}
+    to {width: 49%; opacity: 1}
+}
+
+@keyframes color {
+    from {color: transparent}
+    to {color: black}
+}
+
+/*СкроллБар*/
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f9f9fd;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.50);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd;
+}
+
+/*Мобильная версия*/
+
+@media (max-width: 500px) {
+
+    .product-class-container{
+        width: 450px;
+        flex-flow: column;
+    }
+
+    .class-left{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .class-right{
+        width: 100%;
+    }
+
+    .a-container{
+        height: 200px;
+        font-size: 25px;
+    }
+
+    @keyframes mymove {
+        from {width: 200px; opacity: 0}
+        to {width: 100%; opacity: 1}
+    }
+
+    @keyframes color {
+        from {color: transparent}
+        to {color: black}
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    .product-class-container{
+        width: 800px;
+        flex-flow: column;
+    }
+
+    .class-left{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .class-right{
+        width: 100%;
+    }
+
+    .a-container{
+        height: 200px;
+    }
+
+    @keyframes mymove {
+        from {width: 200px; opacity: 0}
+        to {width: 100%; opacity: 1}
+    }
+
+    @keyframes color {
+        from {color: transparent}
+        to {color: black}
+    }
+
+}

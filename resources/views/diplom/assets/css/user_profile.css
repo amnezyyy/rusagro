@@ -1,0 +1,156 @@
+/*Контейнер*/
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url("../../img/bg/index.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
+.user-pic{
+    justify-content: center;
+    height: auto;
+    width: auto;
+    display: flex;
+    padding-left: 25px;
+    padding-right: 25px;
+    flex-wrap: wrap;
+    padding-top: 150px;
+}
+
+.user-pic-container-main{
+    display: flex;
+    width: 1350px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.user-container{
+    justify-content: center;
+    height: auto;
+    width: auto;
+    display: flex;
+    padding: 50px 25px 50px 25px;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.user-container-main{
+    display: flex;
+    width: 1350px;
+    height: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@keyframes fade-in {
+    from {opacity: 0}
+    to {opacity: 1;}
+}
+
+.user-sidebar{
+    width: 20%;
+    display: flex;
+    flex-flow: column;
+    flex-shrink: 0;
+    height: 100%;
+    font-weight: bolder;
+    transition: all .5s ease;
+}
+
+.sidebar-item{
+    font-size: 18px;
+    margin-bottom: 5px;
+    list-style-type: none;
+    height: auto;
+    width: 100%;
+}
+
+/*Страницы*/
+
+.user-container-page{
+    width: 78%;
+    display: flex;
+    margin: 0;
+    transition: all .5s ease;
+}
+
+.page{
+    width: 100%;
+    display: none;
+}
+
+/*Личный кабинет*/
+
+.user-block{
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    display: flex;
+    width: 49%;
+    flex-flow: column;
+    padding: 25px;
+    height: auto;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.btn-logout{
+    text-align: center;
+    height: 50px;
+    background-color: #3a713b;
+    border: none;
+    width: 100px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bolder;
+}
+
+.btn-logout:hover{
+    background-color: #4bb44d;
+    transition: background-color 0.5s;
+}
+
+/*СкроллБар*/
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f9f9fd;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.50);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd;
+}
+
+/*Мобильная версия*/
+
+@media (max-width: 700px) {
+
+    .user-container-main{
+        width: 650px;
+    }
+
+    .user-sidebar{
+        border-radius: 15px;
+        padding: 15px;
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0 3px rgba(0,0,0,0.5);
+        margin-bottom: 15px;
+    }
+
+    .user-container-page{
+        width: 100%;
+    }
+
+    .user-block{
+        width: 100%;
+    }
+    
+}

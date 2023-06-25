@@ -1,0 +1,80 @@
+.feed-page-container{
+    padding-top: 25px;
+    display: flex;
+    column-gap: 15px;
+    width: 100%;
+    flex-flow: column;
+    height: auto;
+}
+
+.feed-edit{
+    width: 440px;
+    height: 200px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    border-radius: 25px;
+    padding: 25px;
+    transition: all .5s ease;
+}
+
+.feed-edit-top{
+    font-weight: bolder;
+    font-size: 17px;
+    height: 75px;
+    overflow: hidden;
+}
+
+.feed-edit-bottom{
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    column-gap: 15px;
+}
+
+/*Кнопки*/
+
+.btn-add-news{
+    height: 50px;
+    width: 200px;
+    color: white;
+    border-radius: 25px;
+    background-color: #3a713b;
+    font-weight: bolder;
+    border: none;
+    transition: .5s;
+}
+
+.btn-add-news:hover{
+    background-color: #4bb44d;
+}
+
+.btn-feed-admin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 50px;
+    border-radius: 15px;
+    background-color: transparent;
+    font-weight: bolder;
+    transition: .5s;
+}
+
+.delete{
+    color: #b70101;
+    border: 2px solid #b70101;
+}
+
+.delete:hover{
+    background-color: #b70101;
+    color: white;
+}
+
+/*Мобильная версия*/
+
+@media (max-width: 500px) {
+
+    .feed-edit{
+        width: 100%;
+    }
+
+}

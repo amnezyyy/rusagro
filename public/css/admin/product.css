@@ -1,0 +1,80 @@
+.product-page-container{
+    padding-top: 25px;
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    width: 100%;
+}
+
+.product-container{
+    display: flex;
+    flex-flow: wrap;
+    height: auto;
+    width: 100%;
+    column-gap: 25px;
+    row-gap: 25px;
+}
+
+.product-block{
+    height: 200px;
+    padding: 25px;
+    display: flex;
+    flex-flow: column;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    width: 250px;
+    border-radius: 25px;
+    transition: all .5s ease;
+}
+
+.product-top{
+    font-weight: bolder;
+    font-size: 25px;
+    height: 75px;
+    overflow: hidden;
+}
+
+.product-bottom{
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    column-gap: 15px;
+}
+
+/*Кнопки*/
+
+.btn-add-product{
+    width: 200px;
+    height: 50px;
+    background-color: #3a713b;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 25px;
+    transition: .5s;
+}
+
+.btn-add-product:hover{
+    background-color: #4bb44d;
+}
+
+.btn-product-admin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 50px;
+    border-radius: 15px;
+    background-color: transparent;
+    font-weight: bolder;
+    transition: .5s;
+}
+
+/*Мобильная версия*/
+
+@media (max-width: 500px) {
+
+    .product-block{
+        width: 100%;
+    }
+}

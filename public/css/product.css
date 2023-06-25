@@ -1,0 +1,363 @@
+/*Контейнер*/
+
+body{
+    margin: 0;
+    background: url("../img/bg/index.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
+.product-pic{
+    justify-content: center;
+    height: auto;
+    width: auto;
+    display: flex;
+    padding-left: 25px;
+    padding-right: 25px;
+    flex-wrap: wrap;
+    padding-top: 150px;
+}
+
+.product-container{
+    justify-content: center;
+    height: auto;
+    width: auto;
+    display: flex;
+    padding: 50px 25px 25px 25px;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.product-container-main{
+    display: flex;
+    width: 1350px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.breadcrumb{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.breadcrumb-a{
+    color: grey;
+    text-decoration: none;
+    margin-bottom: 0;
+    align-items: center;
+    border-bottom: 1px solid transparent;
+    transition: 1s;
+    font-weight: bolder;
+}
+
+.breadcrumb-a:last-child{
+    border: none;
+    color: #3a713b;
+}
+
+.breadcrumb-a:not(:last-child):hover{
+    color: #3a713b;
+    border-bottom: 1px solid #3a713b;
+}
+
+.product-main{
+    height: auto;
+    width: 1350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    transition: all .5s ease;
+}
+
+.product-main-left{
+    width: 49%;
+    display: flex;
+    height: 475px;
+    animation: fade-des 1s;
+    transition: all .5s ease;
+}
+
+.product-main-right{
+    width: 49%;
+    display: flex;
+    flex-flow: column;
+    height: 475px;
+    animation: fade-des 1s;
+    transition: all .5s ease;
+}
+
+.product-card{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    padding: 25px;
+    border-radius: 25px;
+    justify-content: space-between;
+}
+
+.form-product-to-basket{
+    display: flex;
+    width: 100%;
+}
+
+.product-card-1{
+    display: flex;
+    flex-flow: column;
+    width: 19%;
+    transition: all .5s ease;
+}
+
+.product-card-2{
+    display: flex;
+    width: 49%;
+    transition: all .5s ease;
+}
+
+.product-card-3{
+    display: flex;
+    flex-flow: column;
+    width: 49%;
+    transition: all .5s ease;
+}
+
+.btn-add-to-basket{
+    width: 100%;
+    height: 100%;
+    background-color: #3a713b;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    transition: .5s;
+}
+
+.btn-link{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #3a713b;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    transition: .5s;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-link:hover,
+.btn-add-to-basket:hover{
+    background-color: #4bb44d;
+}
+
+.also-container{
+    display: flex;
+    width: 1350px;
+    height: auto;
+    flex-flow: column;
+    margin-bottom: 25px;
+    animation: fade-des 1s;
+    transition: all .5s ease;
+}
+
+.also-product-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+    column-gap: 1%;
+    row-gap: 25px;
+    transition: all .5s ease;
+}
+
+.also-product{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-flow: column;
+    width: 19%;
+    height: auto;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    border-radius: 25px;
+    padding: 25px;
+    row-gap: 15px;
+    transition: all .5s ease;
+}
+
+.also-product:hover{
+    color: #3a713b;
+}
+
+.also-product-top{
+    display: flex;
+    height: 150px;
+    width: 100%;
+}
+
+.also-product-end{
+    font-size: 20px;
+    justify-content: start;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+}
+
+/*Изображения*/
+
+.img-product{
+    border-radius: 25px;
+    width: 100%;
+}
+
+.also-img-product{
+    border-radius: 25px;
+    min-width: 100%;
+    max-height: 100%;
+}
+
+/*Форма количества*/
+
+.product-input{
+    width: 65%;
+    height: 100%;
+    display: flex;
+}
+
+.btn-input-right{
+    height: 100%;
+    width: 30%;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: .5s;
+}
+
+.btn-input-right:hover{
+    background-color: rgba(234, 234, 234, 0.61);
+}
+
+.btn-input-left{
+    height: 100%;
+    width: 30%;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: .5s;
+}
+
+.btn-input-left:hover{
+    background-color: rgba(234, 234, 234, 0.61);
+}
+
+.inp-input{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+
+@keyframes fade-des {
+    from { opacity: 0}
+    to { opacity: 1}
+}
+
+/*СкроллБар*/
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f9f9fd;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.50);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd;
+}
+
+/*Мобильная версия*/
+
+@media (max-width: 1100px) {
+
+    .product-main{
+        width: 1050px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-main-left{
+        width: 100%;
+        height: auto;
+    }
+
+    .product-main-right{
+        width: 100%;
+        height: auto;
+    }
+
+    .also-product-container{
+        column-gap: 2%;
+    }
+
+    .also-container{
+        width: 850px;
+    }
+
+    .also-product{
+        width: 49%;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .also-product-container{
+        column-gap: 2%;
+    }
+
+    .also-container{
+        width: 500px;
+    }
+
+    .also-product{
+        width: 100%;
+    }
+
+    .product-card{
+        flex-wrap: wrap;
+    }
+
+    .form-product-to-basket{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .product-card-1{
+        width: 24%;
+    }
+
+    .product-card-2{
+        width: 74%;
+    }
+
+    .product-card-3{
+        margin-top: 15px;
+        width: 100%;
+        height: 50px;
+    }
+}

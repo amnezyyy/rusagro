@@ -1,0 +1,12 @@
+if ($a === 1 ){
+echo '<p style="font-size: 25px; margin-bottom: 0; color: #d38b00"><img src="img/etc/timer_user.png"> Принят в обработку</p>'
+}
+if ($a === 2 ){
+<p style="font-size: 25px; margin-bottom: 0; color: #3a713b">Доставлен</p>
+}
+if ($a === 3 ){
+<p style="font-size: 25px; margin-bottom: 0; color: #3a713b">Доставляем</p>
+}
+
+#3a713b
+#4bb44d
