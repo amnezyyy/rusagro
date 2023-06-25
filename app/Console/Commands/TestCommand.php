@@ -38,6 +38,6 @@ class TestCommand extends Command
      */
     public function handle()
     {
-        return 'echoechoechoechoechoechoecho';
+        return '213213';
     }
 }
