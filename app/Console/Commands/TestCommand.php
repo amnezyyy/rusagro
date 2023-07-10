@@ -39,6 +39,7 @@ class TestCommand extends Command
      */
     public function handle()
     {
+        // пример кода с try
         foreach (Order::where('status', 1)->get() as $item)
         {
             try {
