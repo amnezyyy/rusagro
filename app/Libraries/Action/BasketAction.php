@@ -31,4 +31,3 @@ class BasketAction
         return json_encode(true);
     }
 }
-//}

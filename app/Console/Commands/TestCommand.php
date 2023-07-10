@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Models\Order;
 use Exception;
 use Illuminate\Console\Command;
 
@@ -38,6 +39,16 @@ class TestCommand extends Command
      */
     public function handle()
     {
-        return '213213123132131231231231232';
+        foreach (Order::where('status', 1)->get() as $item)
+        {
+            try {
+                $item->update([
+                    'status' => 2
+                ]);
+            } catch (Exception $exception) {
+                print_r($exception -> getMessage());
+            }
+        }
+        return 0;
     }
 }
